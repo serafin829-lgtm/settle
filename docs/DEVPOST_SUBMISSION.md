@@ -1,7 +1,24 @@
-# Devpost submission text (copy/paste)
+# Devpost submission — final field values (copy/paste)
 
-**Project name:** Settle
-**Tagline:** The AI refund desk for small PayPal merchants — resolves customer problems before they become disputes.
+Hackathon: PayPal AI Hackathon — https://paypalaihackathon.devpost.com (rules: https://paypalaihackathon.devpost.com/rules)
+Deadline: Thu 12 Nov 2026, 12:00 pm Pacific = 21:00 CET (Madrid).
+
+| Devpost field | Value |
+|---|---|
+| Project name | Settle |
+| Elevator pitch / tagline | The AI refund desk for small PayPal merchants — resolves customer problems before they become disputes. |
+| Thumbnail | `docs/screenshots/console.png` |
+| Image gallery | all PNGs in `docs/screenshots/` |
+| Video demo link | https://www.youtube.com/watch?v=goWMbWJDUDE (public, 2:22, English) |
+| Try it out — code repository | https://github.com/serafin829-lgtm/settle (public, MIT licence) |
+| Try it out — hosted demo | none (rules allow repo setup instructions instead) |
+| Built with | python, sqlite, javascript, paypal-orders-api, paypal-payments-api, paypal-js-sdk, gemini, openai-compatible-api, render |
+| PayPal products used | PayPal JS SDK Buttons, Orders v2 (create/capture/get), Payments v2 (get capture, refund) — sandbox |
+| AI tool used | Gemini 2.5 Flash via Google's OpenAI-compatible endpoint (function calling); also works with Groq / local Ollama |
+| New or existing project | New, built during the submission period (Oct 2026) |
+| Submitter type | Individual |
+
+## About the project (story) — paste the sections below
 
 ## Inspiration
 Small sellers lose hours answering "it arrived broken / never arrived / wrong colour" messages, and slow answers turn into PayPal disputes and chargebacks. Big retailers have support teams and rules engines. A one-person ceramics studio has an inbox. We wanted to give them a support agent they can trust with money.
@@ -30,6 +47,6 @@ PayPal Disputes API (respond with the same evidence trail), webhooks, email/What
 python, sqlite, javascript, paypal-orders-api, paypal-payments-api, paypal-js-sdk, gemini, openai-compatible-api, render
 
 ## Testing instructions (for judges)
-1. `git clone <repo> && cd <repo> && python3 run.py` → open `http://127.0.0.1:8787/console` → **Load demo cases** (MOCK mode, no keys needed).
+1. `git clone https://github.com/serafin829-lgtm/settle && cd settle && python3 run.py` → open `http://127.0.0.1:8787/console` → **Load demo cases** (MOCK mode, no keys needed).
 2. For the real sandbox: copy `.env.example` to `.env`, paste your PayPal sandbox Client ID/Secret and a free Gemini/Groq key, restart, buy in `/` with a sandbox buyer account and message the shop. Full steps in README.
-(Optional hosted demo: <RENDER_URL>.)
+Demo video: https://www.youtube.com/watch?v=goWMbWJDUDE
