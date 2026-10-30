@@ -1,0 +1,32 @@
+1
+00:00:00,000 --> 00:00:12,780
+If you run a tiny online shop, every "my order arrived broken" message is a race. Answer slowly, and it becomes a PayPal dispute. Settle answers for you, safely.
+
+2
+00:00:13,080 --> 00:00:31,020
+This is Taller Luna, a one-person ceramics studio. Checkout uses PayPal Orders version 2 in the sandbox: create, approve, capture. The buyer adds the Moon vase to the cart and pays with PayPal. The order is captured instantly.
+
+3
+00:00:31,320 --> 00:00:43,884
+The customer writes to the shop, in any language. Here, Sam tells Taller Luna that the vase arrived cracked. No forms, no ticket numbers, just a normal message.
+
+4
+00:00:44,184 --> 00:01:06,948
+Settle's agent investigates like a support person would. It reads the merchant's policy, written in plain English, fetches the real PayPal capture, checks the customer's history, and proposes a full refund, citing the rule. Every step is visible in the trace, so the merchant can see exactly why the agent decided what it decided.
+
+5
+00:01:07,248 --> 00:01:25,356
+The AI can't move money. Code-enforced guardrails check every proposal. This one is above my thirty euro autopilot limit, so I approve with one click, and the PayPal Refunds API pays it back, with an idempotency key so it can never be paid twice.
+
+6
+00:01:25,656 --> 00:01:41,028
+The refund is sent through PayPal, and the case shows the refund ID for clean reconciliation. Behind the scenes, the PayPal capture now shows the amount refunded, and the buyer gets the money back in their PayPal account.
+
+7
+00:01:41,328 --> 00:02:06,444
+Small, clear cases resolve on autopilot, in the customer's language. Partial refunds when the policy says so. And when someone tries to trick the AI into refunding five hundred euros, nothing happens: the guardrails don't read prompts. The dashboard shows how much was refunded, how many cases were solved without a human, and how many attempts were blocked.
+
+8
+00:02:06,744 --> 00:02:21,612
+The merchant stays in control: edit the policy, the limits, or turn autopilot off. Settle: fewer disputes, happier customers, hours back every week. Built with PayPal and AI.
+

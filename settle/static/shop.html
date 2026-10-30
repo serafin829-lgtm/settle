@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Taller Luna · demo shop (Settle)</title><link rel="stylesheet" href="/static/style.css"></head><body>
+<header><div class="brand">Taller <span>Luna</span> <span class="small muted">demo shop</span></div>
+<nav><a class="on" href="/">Shop</a><a href="/console">Merchant console (Settle)</a></nav></header>
+<main>
+<div class="hero"><div><h1 style="margin:0">Handmade ceramics</h1><div class="muted">A fictional small shop used to demo Settle. Payments run in the PayPal <b>sandbox</b> — no real money.</div></div>
+<span id="mode" class="pill"></span></div>
+<div class="grid" id="products"></div>
+<div class="card" style="margin-top:18px" id="checkout">
+  <div class="row between"><h2>Your cart</h2><b id="total">0.00</b></div>
+  <div id="cartlines" class="muted small">Add something above.</div>
+  <div id="mockpay" style="display:none;margin-top:12px">
+    <div class="row"><input id="mname" placeholder="Buyer name" value="Sam Rivera"><input id="memail" placeholder="Buyer email" value="sam.rivera@example.com"></div>
+    <button id="mockbtn" style="margin-top:10px;background:#ffc439;color:#111">Pay with PayPal (simulated sandbox)</button>
+  </div>
+  <div id="paypal-buttons" style="margin-top:12px;max-width:420px"></div>
+</div>
+<div class="card" style="margin-top:18px;display:none" id="after">
+  <h2>✅ Paid — order <span id="oref"></span></h2>
+  <div class="muted small">Something wrong with your order? Write to the shop. Settle (the shop's AI agent) answers in seconds.</div>
+  <label>Your email</label><input id="cemail">
+  <label>Message</label><textarea id="ctext" placeholder="e.g. My vase arrived cracked :("></textarea>
+  <button id="send" style="margin-top:10px">Send to Taller Luna</button>
+  <div id="reply" class="msg" style="display:none;margin-top:14px"></div>
+</div>
+</main><div class="toast" id="toast"></div>
+<script src="/static/shop.js"></script></body></html>

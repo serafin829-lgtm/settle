@@ -1,0 +1,8 @@
+file '/workspace/contenido/hackathon_paypal/video/build/s1.mp4'
+file '/workspace/contenido/hackathon_paypal/video/build/s2.mp4'
+file '/workspace/contenido/hackathon_paypal/video/build/s3.mp4'
+file '/workspace/contenido/hackathon_paypal/video/build/s4.mp4'
+file '/workspace/contenido/hackathon_paypal/video/build/s5.mp4'
+file '/workspace/contenido/hackathon_paypal/video/build/s6.mp4'
+file '/workspace/contenido/hackathon_paypal/video/build/s7.mp4'
+file '/workspace/contenido/hackathon_paypal/video/build/s8.mp4'

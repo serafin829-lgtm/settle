@@ -1,0 +1,30 @@
+# One-click deploy on Render (free web service). Set the secret env vars in the Render dashboard.
+services:
+  - type: web
+    name: settle-demo
+    runtime: python
+    plan: free
+    buildCommand: "echo 'no dependencies'"
+    startCommand: "python3 run.py"
+    healthCheckPath: /api/health
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: 10000
+      - key: PAYPAL_BASE_URL
+        value: https://api-m.sandbox.paypal.com
+      - key: CURRENCY
+        value: EUR
+      - key: DB_PATH
+        value: /tmp/settle.db
+      - key: PAYPAL_CLIENT_ID
+        sync: false
+      - key: PAYPAL_CLIENT_SECRET
+        sync: false
+      - key: AI_BASE_URL
+        value: https://generativelanguage.googleapis.com/v1beta/openai/
+      - key: AI_MODEL
+        value: gemini-2.5-flash
+      - key: AI_API_KEY
+        sync: false

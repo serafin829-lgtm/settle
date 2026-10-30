@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Settle · merchant console</title><link rel="stylesheet" href="/static/style.css"></head><body>
+<header><div class="brand">Settle <span class="small muted">AI refund &amp; resolution copilot · Taller Luna</span></div>
+<nav><span id="mode" class="pill"></span> <span id="ai" class="pill grey"></span><a href="/">Shop</a><a class="on" href="/console">Console</a></nav></header>
+<main>
+<div class="kpis" id="kpis"></div>
+<div class="layout">
+  <div>
+    <div class="card" style="padding:0">
+      <div class="row between" style="padding:12px 14px;border-bottom:1px solid var(--line)"><b>Inbox</b>
+        <span><button class="secondary small" id="seed" title="MOCK mode only">Load demo cases</button> <button class="secondary small" id="refresh">↻</button></span></div>
+      <div id="list"><div class="muted small" style="padding:14px">No cases yet. Buy something in the shop and write to the seller, or load demo cases.</div></div>
+    </div>
+    <div class="card" style="margin-top:18px">
+      <h2>Policy &amp; autopilot</h2>
+      <div class="small muted">Write your refund policy in plain language. The agent follows it; the limits below are enforced in code and can't be overridden by the AI.</div>
+      <label>Refund policy</label><textarea id="policy" style="min-height:180px"></textarea>
+      <div class="row"><div><label>Auto-refund up to</label><input id="lim" type="number" min="0"></div><div><label>Min. confidence</label><input id="conf" type="number" step="0.05" min="0" max="1"></div></div>
+      <div class="row"><div><label>Max refunds / customer / 30d</label><input id="maxr" type="number" min="0"></div><div><label>Autopilot</label><select id="auto"><option value="on">on</option><option value="off">off</option></select></div></div>
+      <button style="margin-top:12px" id="save">Save</button>
+    </div>
+  </div>
+  <div class="card" id="detail"><div class="muted">Select a case.</div></div>
+</div>
+</main><div class="toast" id="toast"></div>
+<script src="/static/console.js"></script></body></html>
